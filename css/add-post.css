@@ -1,0 +1,493 @@
+/* --------------
+* 01.HEADER SECTION
+----------------- */
+.header-section h2,
+p {
+  text-align: center;
+}
+.header-section {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.header-section h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #000000;
+}
+.header-section p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.35;
+  margin: 0.5rem 0;
+}
+.header-section__progress {
+  justify-content: space-between;
+}
+.header-section__progress label {
+  font-weight: 600;
+  font-size: 0.6rem;
+  line-height: 22px;
+  color: #000000;
+  opacity: 0.25;
+}
+.header-section__step {
+  background-color: #e4e4e4;
+  border-radius: 4px;
+  width: 100px;
+  height: 5px;
+  margin-top: 6px;
+}
+.header-section__progress .active .header-section__step {
+  background-color: var(--color-green);
+}
+.header-section__progress .active label {
+  color: var(--color-green);
+  opacity: 1;
+}
+
+/* --------------
+* 02.ADD SECTION
+----------------- */
+.add-section {
+  margin-bottom: 1.5rem;
+}
+:where(.add-section, .add-section-two) .flexwrap {
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.add-section .active p {
+  color: var(--color-green);
+}
+.add-section .active .icon {
+  background-color: var(--color-green);
+}
+.add-section .active {
+  background: #ecfff7;
+  border: 2px solid #1bc27a;
+}
+
+/* --------------
+* 03.ADDRESS SECTION
+----------------- */
+.address-section-map {
+  height: 480px;
+  margin-top: 2rem;
+}
+.address-section .flexwrap {
+  gap: 24px;
+  margin-top: 1.5rem;
+}
+
+/* --------------
+* 04.ABOUT APARTMENT SECTION
+----------------- */
+
+.about-apartment-section .items {
+  gap: 1rem;
+  width: 100%;
+  flex-direction: column;
+}
+.about-apartment-section .form-wrapper .right {
+  margin-top: 1rem;
+}
+
+/* --------------
+* 05.APPEARANCE DETAILS SECTION
+----------------- */
+
+.appearance-details-section p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: var(--color-black);
+  opacity: 0.65;
+  margin-top: 1rem;
+  max-width: 1016px;
+  width: 100%;
+  text-align: start;
+}
+
+.appearance-details-section .row p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  color: #000000;
+  opacity: 0.65;
+}
+.appearance-details-section a {
+  color: var(--color-green);
+}
+
+/* --------------
+* 06.CONTACTS SECTION
+----------------- */
+
+.contacts-section .btn {
+  margin-top: 10px;
+}
+
+/* custom style*/
+.box-style {
+  max-width: 1278px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000000;
+}
+/* checkbox style*/
+label {
+  cursor: pointer;
+  /* background-color: black; */
+}
+
+/* card */
+.card {
+  width: 100%;
+  height: 124px;
+  background: #fafafa;
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+  flex: 0 0 48%;
+  position: relative;
+}
+.card-item {
+  text-align: center;
+}
+.card-item .icon {
+  width: 33px;
+  height: 33px;
+  background-color: #000000;
+}
+.card-item p {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+}
+/* radio button */
+.input-container {
+  position: relative;
+}
+.input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+.input-container .radio-tile {
+  border-radius: 10px;
+  padding: 6px 12px;
+  background: #fafafa;
+  border: 2px solid #ebebeb;
+}
+.input-container label {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #000000;
+}
+.input-container input:checked + .radio-tile {
+  background: #ecfff7;
+  border: 2px solid #1bc27a;
+}
+.input-container input:checked + .radio-tile label {
+  color: var(--color-green);
+}
+.radio-container {
+  gap: 1rem;
+}
+
+.wrap {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.real-radio {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.custom-radio {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 1px solid var(--color-green);
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+.custom-radio::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: var(--color-green);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  transition: 0.2s ease-in;
+}
+
+.real-radio:checked + .custom-radio::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form-control {
+  background: #fafafa;
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #141414;
+  opacity: 0.35;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* form - control*/
+.form-wrapper {
+  margin-top: 1.5rem;
+}
+.form-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form-wrapper .row {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.form-wrapper .row .form-wrapper__label {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+  flex: 0 0 13%;
+}
+
+.form-wrapper .row:nth-child(1) label:nth-child(3) {
+  margin-right: 1.5rem;
+}
+.form-wrapper .row:nth-child(1) input:nth-child(2) {
+  margin-bottom: 1.5rem;
+}
+
+.button-group-section {
+  gap: 1.2rem;
+  margin: 2.5rem 0 86px;
+}
+.button-group-section .btn {
+  width: 200px;
+  height: 46px;
+  font-size: 14px;
+}
+
+.image-item {
+  width: 101px;
+  height: 101px;
+  background: #ecfff7;
+  border: 2px dashed #a3eacb;
+  border-radius: 50%;
+  position: relative;
+}
+.image-item input {
+  display: none;
+}
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* .image-item:hover div {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  color: #f5f5f5;
+  background-color: var(--color-green);
+} */
+.image-item div .icon {
+  background-color: white;
+}
+.image-item:hover .add-img {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  color: #f5f5f5;
+  background-color: var(--color-green);
+}
+.file-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media screen and (min-width: 481px) {
+}
+
+@media screen and (min-width: 768px) {
+  /* --------------
+* 01.HEADER SECTION
+----------------- */
+  .header-section h2 {
+    font-size: 28px;
+  }
+  .header-section p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 2rem;
+  }
+  .header-section__progress label {
+    font-size: 0.9rem;
+  }
+  .header-section__step {
+    width: 300px;
+    height: 10px;
+  }
+
+  .form-control {
+    flex: 0 0 48%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* --------------
+* 01.HEADER SECTION
+----------------- */
+  .header-section {
+    margin: 2.5rem 0;
+  }
+  .header-section h2 {
+    font-size: 28px;
+  }
+  .header-section p {
+    font-size: 1rem;
+  }
+  .header-section__progress label {
+    font-size: 1rem;
+  }
+  .header-section__step {
+    background-color: #e4e4e4;
+    border-radius: 4px;
+    width: 410px;
+    height: 10px;
+    margin-top: 12px;
+  }
+  .box-style {
+    padding: 2rem 2.25rem;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .card {
+    flex: 0 0 32.6%;
+  }
+
+  .address-section .form-control:nth-child(1) {
+    font-size: 1rem;
+    flex: 0 0 58%;
+  }
+  .address-section .form-control:nth-child(2) {
+    flex: 0 0 39.9%;
+  }
+
+  /* form control */
+  .form-wrapper .row .form-wrapper__label {
+    font-size: 1rem;
+    line-height: 24px;
+    flex: 0 0 13%;
+  }
+
+  .form-wrapper .row {
+    align-items: center;
+    flex-direction: row;
+  }
+  :where(.about-apartment-section, .about-house-section, .transaction-section)
+    .form-wrapper
+    .row
+    .form-control {
+    flex: 0 0 33%;
+  }
+  .form-wrapper .row:nth-child(1) input:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .form-wrapper .row > input:nth-child(2) {
+    margin-left: 20px;
+  }
+  .form-wrapper .row:nth-child(1) .form-control {
+    margin-right: 40px;
+  }
+
+  .about-apartment-section .items {
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .about-apartment-section .form-wrapper .right {
+    margin-left: 20px;
+    margin-right: -100px;
+  }
+  .appearance-details-section .form-control {
+    width: 700px;
+    margin-right: 1.5rem;
+  }
+
+  .contacts-section .btn {
+    width: 205px;
+    height: 56px;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+
+  .input-container .radio-tile {
+    border-radius: 28px;
+    padding: 12px 36px;
+  }
+  .input-container label {
+    font-size: 1rem;
+  }
+  .button-group-section {
+    gap: 1.2rem;
+    margin: 2.5rem 0 86px;
+  }
+  .button-group-section .btn {
+    width: 280px;
+    height: 48px;
+  }
+}

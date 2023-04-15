@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="page" class="site">
+      <!-- Header Section-->
+
+      <!-- mobile -->
+      <aside class="site-off desktop-hide">
+        <div class="off-canvas">
+          <div class="canvas-head flexitem">
+            <a href="/">
+              <img src="./assets/images/logo.png" alt="" />
+            </a>
+            <a href="#" class="t-close flexcenter"
+              ><i class="ri-close-line"></i
+            ></a>
+          </div>
+          <nav></nav>
+          <div class="thetop-nav"></div>
+        </div>
+      </aside>
+      <!-- /mobile -->
+
+      <header class="header">
+        <!-- header top -->
+        <div class="header-top mobile-hide">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <div class="left">
+                <ul class="flexitem">
+                  <li>Местоположение:</li>
+                  <p class="flexitem">
+                    <i class="icon icon__compass"></i>Выберите регион
+                  </p>
+                </ul>
+              </div>
+              <div class="right">
+                <ul class="flexitem main-links">
+                  <li><a href="#">Ночной режим</a></li>
+                  <li><a href="#">О проекте</a></li>
+                  <li><a href="#">Реклама</a></li>
+                  <li><a href="#">Как подать объявление?</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li>
+                    <a href="#">Русский</a>
+                    <ul>
+                      <li class="current"><a href="#">ру</a></li>
+                      <li><a href="#">анг</a></li>
+                      <li><a href="#">uz</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /header-top -->
+
+        <!-- header nav -->
+        <div class="header-nav">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <a href="#" class="trigger desktop-hide"
+                ><i class="ri-menu-2-line"></i
+              ></a>
+              <div class="left flexitem">
+                <div class="logo">
+                  <a href="/">
+                    <img src="./assets/images/logo.png" alt="" />
+                  </a>
+                </div>
+                <nav class="mobile-hide">
+                  <ul class="flexitem second-links">
+                    <li><a href="#" class="active">Аренда</a></li>
+                    <li><a href="#">Продажа</a></li>
+                    <li><a href="#">Новостройки</a></li>
+                    <li><a href="#">Ипотека</a></li>
+                    <li><a href="#">Ипотека</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="right">
+                <ul class="flexitem second-links">
+                  <li class="mobile-hide">
+                    <a href="#" class="btn btn-success-outline">
+                      <i class="icon icon__heart"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-success-outline">Войти</a>
+                  </li>
+                  <li>
+                    <a href="/add-post.html" class="btn btn-success">
+                      <i class="icon icon__plus mobile-hide"></i> Добавить
+                      <span class="mobile-hide"> объявление</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /header nav -->
+      </header>
+      <!-- /Header Section -->
+
+      <main>
+        <div class="container">
+          <!-- Category Section -->
+          <section class="category-section"></section>
+          <!-- /Category Section -->
+
+          <!-- Banner Section-->
+          <section class="banner-section">
+            <h1>Купить/арендовать/продать - легко!</h1>
+            <div class="banner-section__center">
+              <div class="flexwrap">
+                <div class="row">
+                  <div class="item flexwrap">
+                    <label>Tип</label>
+                    <select name="" id="">
+                      <option value="s">Посуточная аренда</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="item flexwrap">
+                    <label>Количество комнат</label>
+                    <select name="" id="">
+                      <option value="s">Посуточная аренда</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item flexwrap">
+                    <label>Стоимость</label>
+                    <select name="" id="">
+                      <option value="sum">2.5 mln - 3 mln UZS</option>
+                      <option value="sum">2.5 mln - 3 mln UZS</option>
+                      <option value="sum">2.5 mln - 3 mln UZS</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="item flexwrap">
+                    <label>Область</label>
+                    <select name="" id="">
+                      <option value="tashkent">Tashkent</option>
+                      <option value="navoi">Navoi</option>
+                      <option value="sirdaryo">Sirdaryo</option>
+                      <option value="jizzax">Jizzax</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="item flexwrap">
+                    <label>Регион</label>
+                    <select name="" id="">
+                      <option value="s">Chilonzor</option>
+                      <option value="s">Yashnabod</option>
+                      <option value="s">Mirzo Ulugbek</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-section__bottom flexwrap">
+              <div class="left">
+                <button class="banner__button flexitem flexcenter">
+                  <i class="icon icon__search-plus"></i>Расширенный поиск
+                </button>
+              </div>
+              <div class="right flexitem" style="gap: 16px">
+                <button class="banner__button flexitem flexcenter">
+                  <i class="icon icon__compass"></i> На карте
+                </button>
+                <buttonn class="btn btn-success">Найти</buttonn>
+              </div>
+            </div>
+          </section>
+          <!-- Banner Section-->
+
+          <!-- Great deals Section -->
+          <section class="great-deals-section">
+            <div class="flexitem title-header">
+              <h1 class="title">Выгодные предложения</h1>
+              <div class="swiper-button-next">
+                <i class="icon icon__next"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="icon icon__prev"></i>
+              </div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper flexitem"></div>
+            </div>
+            <!-- /Swiper -->
+          </section>
+          <!-- /Great deals Section -->
+
+          <!-- Recommendations for you -->
+          <section class="recommendation-section">
+            <div class="recommendation__header">
+              <h1 class="title">Рекомендации для вас</h1>
+            </div>
+            <div class="recommendation-section__wrapper"></div>
+            <div class="btn btn-success-outline" id="load-more">
+              <i class="icon icon__reload"></i>Загрузить ещё
+            </div>
+          </section>
+          <!-- /Recommendations for you -->
+
+          <!-- Best Sellers Section -->
+          <section class="bestsellers-section">
+            <div class="bestsellers-section__left">
+              <h1 class="title">Лучшие продавцы</h1>
+
+              <div class="bestsellers-section__wrapper"></div>
+            </div>
+            <div class="bestsellers-section__right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30513.668249654384!2d69.27314635034708!3d41.32208051948929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2c64aa3d0f%3A0xba59bc80197d4da8!2z0JDQvNC40YAg0KLQtdC80YPRgCDQpdC40LXQsdC-0L3QuA!5e0!3m2!1sru!2s!4v1681391287608!5m2!1sru!2s"
+                width="100%"
+                height="100%"
+                style="border: 0; border-radius: var(--border-radius)"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </section>
+          <!-- /Best Sellers Section -->
+
+          <!-- Affiliate Program Section -->
+          <section class="affiliate-section flexwrap">
+            <div class="affiliate-section__left">
+              <h4>Партнерская программая</h4>
+              <p>
+                Найдите место своей мечты, в котором вы найдете более 10 000
+                объектов недвижимости.
+              </p>
+              <button class="btn btn-success">Просмотр свойств</button>
+              <img src="./assets/images/illustration.png" alt="Image" />
+            </div>
+            <div class="affiliate-section__right">
+              <div class="flexwrap">
+                <div class="row">
+                  <div class="item">
+                    <div class="circle flexcenter">
+                      <div class="circle__inner flexcenter">
+                        <i class="icon icon__house-icon"></i>
+                      </div>
+                      <img
+                        src="./assets/images/benefits1.png"
+                        class="benefits-icon"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Страхование собственности</h4>
+                    <p>
+                      Мы предлагаем нашим клиентам защиту имущества, покрытие
+                      ответственности и страхование для их лучшей жизни.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item">
+                    <div class="circle flexcenter">
+                      <div class="circle__inner flexcenter">
+                        <i class="icon icon__commercial"></i>
+                      </div>
+                      <img
+                        src="./assets/images/benefits2.png"
+                        class="benefits-icon"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Лучшая цена</h4>
+                    <p>
+                      Не знаете, сколько вы должны за недвижимость? Не надо
+                      беспокоиться, позвольте сделать цифры для вас.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item">
+                    <div class="circle flexcenter">
+                      <div class="circle__inner flexcenter">
+                        <i class="icon icon__house-icon"></i>
+                      </div>
+                      <img
+                        src="./assets/images/benefits4.png"
+                        class="benefits-icon"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Самая низкая комиссия</h4>
+                    <p>
+                      Вам больше не нужно договариваться о комиссиях и
+                      торговаться с другими агентами, это стоит всего 2%!
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item">
+                    <div class="circle flexcenter">
+                      <div class="circle__inner flexcenter">
+                        <i class="icon icon__house-icon"></i>
+                      </div>
+                      <img
+                        src="./assets/images/benefits.png"
+                        class="benefits-icon"
+                        alt=""
+                      />
+                    </div>
+                    <h4>Общий контроль</h4>
+                    <p>
+                      Получите виртуальный тур и запланируйте посещения, прежде
+                      чем арендовать или купить недвижимость.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /Affiliate Program Section -->
+        </div>
+      </main>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer__top">
+          <!-- newsletter-->
+          <div class="newsletter">
+            <div class="container">
+              <div class="newsletter__wrapper">
+                <div class="newsletter__box">
+                  <div class="newsletter_content">
+                    <h1>RizoMulk</h1>
+                    <p>
+                      Поделитесь с нами своей электронной почтой и мы сообщим
+                      вам о скидках, выгодных предложениях и новых продуктах.
+                    </p>
+                  </div>
+                  <form action="" class="newsletter__search">
+                    <input type="text" placeholder="Email" />
+                    <input
+                      type="submit"
+                      class="btn btn-success"
+                      value="Отправить"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /newsletter -->
+
+          <!-- widgets -->
+          <div class="widgets">
+            <div class="container">
+              <div class="wrapper">
+                <div class="flexwrap">
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Компания</h4>
+                      <ul class="flexcol">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Ваканция</a></li>
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="#">Блог</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Помощь</h4>
+                      <ul class="flexcol">
+                        <li><a href="#">Связаться с нами</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Другие</h4>
+                      <ul class="flexcol">
+                        <li><a href="#">Настройка</a></li>
+                        <li><a href="#">Профиль</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Мы в соцсетях</h4>
+                      <ul class="flexcol">
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__facebook"></i> Facebook</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__twitter"></i>Twitter</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__instagram"></i>Instagram</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__youtube"></i>Youtube</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <ul>
+                        <li>
+                          <img
+                            src="./assets/images/payment/apelsin.png"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/images/payment/uzcard.png"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img src="./assets/images/payment/click.png" alt="" />
+                        </li>
+                        <li>
+                          <img src="./assets/images/payment/payme.png" alt="" />
+                        </li>
+                        <li>
+                          <img src="./assets/images/payment/humo.png" alt="" />
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/images/payment/paynet.png"
+                            alt=""
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /widgets -->
+        </div>
+        <div class="footer__bottom">
+          <div class="container flexwrap">
+            <div class="left">
+              <p>© 2022 — Rizo Mulk</p>
+            </div>
+            <div class="right">
+              <ul class="flexwrap">
+                <li>info@rizomulk.uz</li>
+                <li>+998 97 123 45 67</li>
+                <li>Узбекистан, Ташекент, Чиланзар</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /Footer Section-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="./js/mock/data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

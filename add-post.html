@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Post</title>
+
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/add-post.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page" class="site">
+      <!-- Header Section-->
+
+      <!-- mobile -->
+      <aside class="site-off desktop-hide">
+        <div class="off-canvas">
+          <div class="canvas-head flexitem">
+            <a href="/">
+              <img src="./assets/images/logo.png" alt="" />
+            </a>
+            <a href="#" class="t-close flexcenter"
+              ><i class="ri-close-line"></i
+            ></a>
+          </div>
+          <nav></nav>
+          <div class="thetop-nav"></div>
+        </div>
+      </aside>
+      <!-- /mobile -->
+
+      <header class="header">
+        <!-- header top -->
+        <div class="header-top mobile-hide">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <div class="left">
+                <ul class="flexitem">
+                  <li>Местоположение:</li>
+                  <p class="flexitem">
+                    <i class="icon icon__compass"></i>Выберите регион
+                  </p>
+                </ul>
+              </div>
+              <div class="right">
+                <ul class="flexitem main-links">
+                  <li><a href="#">Ночной режим</a></li>
+                  <li><a href="#">О проекте</a></li>
+                  <li><a href="#">Реклама</a></li>
+                  <li><a href="#">Как подать объявление?</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li>
+                    <a href="#">Русский</a>
+                    <ul>
+                      <li class="current"><a href="#">ру</a></li>
+                      <li><a href="#">анг</a></li>
+                      <li><a href="#">uz</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /header-top -->
+
+        <!-- header nav -->
+        <div class="header-nav">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <a href="#" class="trigger desktop-hide"
+                ><i class="ri-menu-2-line"></i
+              ></a>
+              <div class="left flexitem">
+                <div class="logo">
+                  <a href="/">
+                    <img src="./assets/images/logo.png" alt="" />
+                  </a>
+                </div>
+                <nav class="mobile-hide">
+                  <ul class="flexitem second-links">
+                    <li><a href="#" class="active">Аренда</a></li>
+                    <li><a href="#">Продажа</a></li>
+                    <li><a href="#">Новостройки</a></li>
+                    <li><a href="#">Ипотека</a></li>
+                    <li><a href="#">Ипотека</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="right">
+                <ul class="flexitem second-links">
+                  <li class="mobile-hide">
+                    <a href="#" class="btn btn-success-outline">
+                      <i class="icon icon__heart"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-success-outline">Войти</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-success">
+                      <i class="icon icon__plus mobile-hide"></i> Добавить
+                      <span class="mobile-hide"> объявление</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /header nav -->
+      </header>
+      <!-- /Header Section -->
+
+      <main class="container">
+        <!-- Header Title Section-->
+        <section class="header-section">
+          <h2>Добавить новое обьявление</h2>
+          <p>Для добавления вашего обьявлении вы должны выбрать категорию</p>
+          <div class="header-section__progress flexitem">
+            <div class="active">
+              <label>Выберите категорию</label>
+              <div class="header-section__step active"></div>
+            </div>
+            <div class="">
+              <label>Основная информация</label>
+              <div class="header-section__step"></div>
+            </div>
+            <div class="">
+              <label>Финальный результат</label>
+              <div class="header-section__step"></div>
+            </div>
+          </div>
+        </section>
+        <!-- /Header Title Section-->
+
+        <!-- ADD SECTION -->
+        <section class="add-section box-style">
+          <h3 class="subtitle">Новое обьявление</h3>
+          <form action="">
+            <div class="flexwrap">
+              <label for="1" class="card flexcenter active">
+                <div class="card-item">
+                  <i class="icon icon__tosell"></i>
+                  <p>Продать</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="1"
+                    id="1"
+                    class="real-radio"
+                    checked
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+
+              <label for="2" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__longtime"></i>
+                  <p>Сдать длительно</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="2"
+                    id="2"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+
+              <label for="3" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__rentby"></i>
+                  <p>Сдать посуточно</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="3"
+                    id="3"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+            </div>
+          </form>
+        </section>
+        <!-- /ADD SECTION -->
+
+        <!-- ADD SECTION TWO-->
+        <section class="add-section box-style">
+          <h3 class="subtitle">Новое обьявление</h3>
+          <form action="">
+            <div class="flexwrap">
+              <label for="4" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__flat"></i>
+                  <p>Квартира</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="4"
+                    id="4"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+
+              <label for="5" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__flat"></i>
+                  <p>Комната</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="5"
+                    id="5"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+
+              <label for="6" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__house-x"></i>
+                  <p>Дом</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="6"
+                    id="6"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+
+              <label for="7" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__garage"></i>
+                  <p>Гараж</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="7"
+                    id="7"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+
+              <label for="8" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__commercial"></i>
+                  <p>Коммерческая</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="8"
+                    id="8"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+
+              <label for="9" class="card flexcenter">
+                <div class="card-item">
+                  <i class="icon icon__region"></i>
+                  <p>Участок</p>
+                </div>
+                <div class="wrap">
+                  <input
+                    type="radio"
+                    name="category"
+                    value="9"
+                    id="9"
+                    class="real-radio"
+                  />
+                  <span class="custom-radio"></span>
+                </div>
+              </label>
+            </div>
+          </form>
+        </section>
+        <!-- /ADD SECTION TWO-->
+
+        <!-- Address of the house -->
+        <section class="address-section box-style">
+          <h3 class="subtitle">Адрес дома</h3>
+          <div class="flexwrap">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Укажите адрес или название ЖК"
+            />
+            <input type="text" class="form-control" placeholder="Квартира" />
+          </div>
+          <div class="address-section-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30513.668249654384!2d69.27314635034708!3d41.32208051948929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2c64aa3d0f%3A0xba59bc80197d4da8!2z0JDQvNC40YAg0KLQtdC80YPRgCDQpdC40LXQsdC-0L3QuA!5e0!3m2!1sru!2s!4v1681391287608!5m2!1sru!2s"
+              width="100%"
+              height="100%"
+              style="border: 0; border-radius: var(--border-radius)"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+        <!-- /Address of the house -->
+
+        <!-- ABOUT THE HOUSE SECTION -->
+        <section class="about-house-section box-style">
+          <h3 class="subtitle">О дома</h3>
+          <div class="form-wrapper">
+            <div class="flex">
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Год постройки</label>
+                <input type="text" class="form-control" />
+                <label class="form-wrapper__label">Высота потолков, м</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Год постройки</label>
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Совмещенный</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Подземная</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Открытая</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Тип дома</label>
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Кирпич</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Монолит</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Панель</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Кирпич-монолит</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Блок</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /ABOUT THE HOUSE SECTION-->
+
+        <!-- ABOUT THE APARTMENT SECTION-->
+        <section class="about-apartment-section box-style">
+          <h3 class="subtitle">О квартире</h3>
+          <div class="form-wrapper">
+            <div class="flex">
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Комнат</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">1</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">2</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">3</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">4</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">4</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">5</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">5</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">7+</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Студия</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Плошадь м2</label>
+                <div class="items flexitem">
+                  <input type="text" class="form-control" placeholder="Общая" />
+                  <input type="text" class="form-control" placeholder="Жилая" />
+                  <input type="text" class="form-control" placeholder="Кухня" />
+                </div>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Этаж</label>
+                <input type="text" class="form-control" />
+                <label class="form-wrapper__label right">из</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Статус</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Апартменты</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Жилой фонд</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Санузел</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Совмещенный</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Разделный</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Более одного</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Балкон</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Балкон</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Люджия</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Нет</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">+</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Ремонт</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Косметический</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Евро</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Дизайнерский</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Требуется</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Окна</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Во двор</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">На улицу</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /ABOUT THE APARTMENT SECTION-->
+
+        <!-- APPEARANCE AND DETAILS SECTION-->
+        <section class="appearance-details-section box-style">
+          <h3>Внешний вид и подробности</h3>
+          <p>
+            Сфотографируйте все комнаты, кухню, санузел, коридор, балкон, вид из
+            окна, фасад здания, подъезд. Не используйте скриншоты. Максимум 30
+            фото до 10 Мбайт
+          </p>
+
+          <div class="form-wrapper">
+            <div class="flex">
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Добавьте фотографию</label>
+                <div class="file-flex">
+                  <div class="image-item">
+                    <input type="file" id="file-1" accept="image/*" />
+                    <label for="file-1" id="file-1-preview">
+                      <img src="./assets/images/ellipse/ellipse1.png" />
+                    </label>
+                  </div>
+                  <div class="image-item">
+                    <input type="file" id="file-2" accept="image/*" />
+                    <label for="file-2" id="file-2-preview">
+                      <img src="" />
+                      <div class="flexcenter add-img">
+                        <span><i class="icon icon__plus"></i></span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="image-item">
+                    <input type="file" id="file-3" accept="image/*" />
+                    <label for="file-3" id="file-3-preview">
+                      <img src="" />
+                      <div class="flexcenter add-img">
+                        <span><i class="icon icon__plus"></i></span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="image-item">
+                    <input type="file" id="file-4" accept="image/*" />
+                    <label for="file-4" id="file-4-preview">
+                      <img src="" />
+                      <div class="flexcenter add-img">
+                        <span><i class="icon icon__plus"></i></span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">YouTube видео</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="https://youtu.be/Ulay2FvUEd8"
+                />
+                <p>
+                  Требованиями к контенту ролика, а также ссылка на помощь с
+                  <a href="#">рекомендациями по подготовке ролика</a>
+                </p>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Подробнее</label>
+
+                <textarea
+                  name=""
+                  id=""
+                  cols="40"
+                  rows="6"
+                  class="form-control"
+                  placeholder="Опишите недвижимость"
+                ></textarea>
+              </div>
+
+              <div class="row" style="display: flex; align-items: flex-start">
+                <label class="form-wrapper__label">Удобства</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Интернет</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Холдильник</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Мебель на кухне</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Кондиционер</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Лифт</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Мебель в квартире</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Мусопровод</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Консьсерж</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Закрытая территория</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /APPEARANCE AND DETAILS SECTION-->
+
+        <!-- PRICE AND TERMS OF THE TRANSACTION -->
+        <section class="transaction-section box-style">
+          <h3 class="subtitle">Цена и условия сделки</h3>
+
+          <div class="form-wrapper">
+            <div class="flex">
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Год постройки</label>
+                <input type="number" class="form-control" />
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Тип сделки</label>
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Свободная продажа</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Альтернатива</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Переступка</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Дополнительно</label>
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Возможен торг</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Ипотека</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /PRICE AND TERMS OF THE TRANSACTION -->
+
+        <!-- CONTACTS SECTION-->
+        <section class="contacts-section box-style">
+          <h3 class="subtitle">Контакты</h3>
+          <div class="form-wrapper">
+            <div class="flex">
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Тип аккаунта</label>
+
+                <form class="radio-container flexwrap">
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Собственник</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Агент</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="radio-tile-group flexcenter">
+                    <div class="input-container">
+                      <input id="walk" type="radio" name="radio" />
+                      <div class="radio-tile">
+                        <label for="walk">Агенство</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Ваша имя</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="https://youtu.be/Ulay2FvUEd8"
+                />
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Эл. почта</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="rizomulkceo@gmaol.com"
+                />
+              </div>
+
+              <div class="row flexitem">
+                <label class="form-wrapper__label">Телефон</label>
+                <input type="tel" class="form-control" value="+998" />
+                <button class="btn btn-success" disabled>Подтвердить</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /CONTACTS SECTION -->
+
+        <!-- BUTTONS GROUP SECTION-->
+        <div class="button-group-section flexcenter">
+          <button class="btn btn-success-outline">
+            Сохранить как черновик
+          </button>
+          <button class="btn btn-success">Опубликовать</button>
+        </div>
+        <!-- /BUTTONS GROUP SECTION-->
+      </main>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer__top">
+          <!-- newsletter-->
+          <div class="newsletter">
+            <div class="container">
+              <div class="newsletter__wrapper">
+                <div class="newsletter__box">
+                  <div class="newsletter_content">
+                    <h1>RizoMulk</h1>
+                    <p>
+                      Поделитесь с нами своей электронной почтой и мы сообщим
+                      вам о скидках, выгодных предложениях и новых продуктах.
+                    </p>
+                  </div>
+                  <form action="" class="newsletter__search">
+                    <input type="text" placeholder="Email" />
+                    <input
+                      type="submit"
+                      class="btn btn-success"
+                      value="Отправить"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /newsletter -->
+
+          <!-- widgets -->
+          <div class="widgets">
+            <div class="container">
+              <div class="wrapper">
+                <div class="flexwrap">
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Компания</h4>
+                      <ul class="flexcol">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Ваканция</a></li>
+                        <li><a href="#">Объявления</a></li>
+                        <li><a href="#">Блог</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Помощь</h4>
+                      <ul class="flexcol">
+                        <li><a href="#">Связаться с нами</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Другие</h4>
+                      <ul class="flexcol">
+                        <li><a href="#">Настройка</a></li>
+                        <li><a href="#">Профиль</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <h4>Мы в соцсетях</h4>
+                      <ul class="flexcol">
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__facebook"></i> Facebook</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__twitter"></i>Twitter</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__instagram"></i>Instagram</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="flexitem"
+                            ><i class="icon icon__youtube"></i>Youtube</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item mini-links">
+                      <ul>
+                        <li>
+                          <img
+                            src="./assets/images/payment/apelsin.png"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/images/payment/uzcard.png"
+                            alt=""
+                          />
+                        </li>
+                        <li>
+                          <img src="./assets/images/payment/click.png" alt="" />
+                        </li>
+                        <li>
+                          <img src="./assets/images/payment/payme.png" alt="" />
+                        </li>
+                        <li>
+                          <img src="./assets/images/payment/humo.png" alt="" />
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/images/payment/paynet.png"
+                            alt=""
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /widgets -->
+        </div>
+        <div class="footer__bottom">
+          <div class="container flexwrap">
+            <div class="left">
+              <p>© 2022 — Rizo Mulk</p>
+            </div>
+            <div class="right">
+              <ul class="flexwrap">
+                <li>info@rizomulk.uz</li>
+                <li>+998 97 123 45 67</li>
+                <li>Узбекистан, Ташекент, Чиланзар</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- /Footer Section-->
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/add-post.js"></script>
+  </body>
+</html>
